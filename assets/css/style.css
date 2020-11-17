@@ -1,0 +1,88 @@
+/*background*/
+.bg-lightblue {
+    background-color: #f2f8ff;
+}
+
+.bg-bluesky {
+    background-color: #4d94e0;
+    color: #ffff;
+    height: 30px;
+}
+
+.bg-bluetray {
+    background-color: #4d94e0;
+    color: white;
+}
+
+/*padding */
+.ctn-partner div {
+    margin: 30px 83px 10px 83px;
+}
+
+/* for jumbotron */
+.jumbotron {
+    background-image: url(https://admin.workforce.com/wp-content/uploads/sites/2/2018/12/AI-is-coming-%E2%80%94-and-HR-is-not-prepared.jpg);
+    background-size: cover;
+    height: 670px;
+    margin-top: 78px;
+}
+
+.jumbotron .container {
+    color: white;
+    text-align: right;
+    margin-top: 100px;
+}
+
+.jumbotron a {
+    margin-right: 120px;
+    text-align: center;
+    font-family: OpenSans-Regular;
+    font-size: 30px;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin-left: 80px;
+    background: #8db70e;
+}
+
+.jumbotron a:hover {
+    color: white;
+    background: #c0ff00f7;
+}
+
+/*for title text of container*/
+.title-me {
+    font-size: 23px;
+}
+
+/*for img of parntership */
+.partenrship {
+    height: 150px;
+    width: 150px;
+}
+
+/* awards */
+.awards img {
+    width: 100px;
+    height: 100px;
+}
+
+/* maps */
+.map {
+    width: auto;
+    height: 450px;
+}
+
+/* footer */
+.footer img {
+    width: 200px;
+    height: 80px;
+}
+
+.footer li a {
+    color: white;
+}
+
+.footer li a:hover {
+    color: violet;
+}

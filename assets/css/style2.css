@@ -1,0 +1,71 @@
+/*background*/
+.bg-lightblue {
+    background-color: #f2f8ff;
+}
+
+.bg-bluesky {
+    background-color: #4d94e0;
+    color: #ffff;
+    height: 30px;
+}
+
+.bg-bluetray {
+    background-color: #4d94e0;
+    color: white;
+}
+
+/*padding */
+.ctn-partner div {
+    margin: 30px 83px 10px 83px;
+}
+
+/* navbar */
+/* for carousel / slider */
+.carousel-item {
+    max-height: 730px;
+}
+
+.input-group input {
+    background-color: transparent;
+    color: red;
+}
+
+/*for title text of container*/
+.title-me {
+    font-size: 23px;
+}
+
+/*for img of parntership */
+.partenrship {
+    height: 150px;
+    width: 150px;
+}
+
+/* awards */
+.awards img {
+    width: 100px;
+    height: 100px;
+}
+
+/* maps */
+.map {
+    width: auto;
+    height: 450px;
+}
+
+/* footer */
+.footer img {
+    width: 200px;
+    height: 100px;
+}
+
+.footer li a {
+    color: white;
+}
+
+.footer li a:hover {
+    color: violet;
+}
+
+
+@media(max-width: 775)
