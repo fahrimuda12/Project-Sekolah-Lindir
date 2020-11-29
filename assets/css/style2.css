@@ -14,12 +14,69 @@
     color: white;
 }
 
+.bg-eks {
+    background: #ad5389;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.blue-gradient {
+    background: #536976;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #292E49, #536976);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #292E49, #536976);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.shadow-white {
+    box-shadow: 0 0 1rem rgba(67, 0, 73, 0.808) !important
+}
+
 /*padding */
 .ctn-partner div {
     margin: 30px 83px 10px 83px;
 }
 
 /* navbar */
+.btn:hover {
+    background-color: white;
+}
+
+/* for jumbotron */
+.jumbotron {
+    background-image: url(../img/SmartTechnology.jpg);
+    background-size: cover;
+    height: 670px;
+}
+
+.jumbotron .container {
+    color: white;
+    text-align: right;
+    margin-top: 100px;
+}
+
+.jumbotron a {
+    margin-right: 120px;
+    text-align: center;
+    font-family: OpenSans-Regular;
+    font-size: 30px;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    margin-left: 80px;
+    background: #8db70e;
+}
+
+.jumbotron a:hover {
+    color: white;
+    background: #c0ff00f7;
+}
+
 /* for carousel / slider */
 .carousel-item {
     max-height: 730px;
@@ -33,6 +90,114 @@
 /*for title text of container*/
 .title-me {
     font-size: 23px;
+}
+
+/* for card title*/
+.block-2 {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    -ms-perspective: 1000;
+    perspective: 1000;
+}
+
+.block-2:hover .back,
+.block-2.hover .back {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+}
+
+.block-2:hover .front,
+.block-2.hover .front {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.block-2,
+.block-2 .front,
+.block-2 .back {
+    width: 100%;
+    height: 327px;
+}
+
+.block-2 .front,
+.block-2 .back {
+    backface-visibility: hidden;
+    border-radius: 4px;
+    transition: 0.6s;
+    -webkit-transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transform: rotateY(0deg);
+    -moz-transition: 0.6s;
+    -moz-transform-style: preserve-3d;
+    -moz-transform: rotateY(0deg);
+    -o-transition: 0.6s;
+    -o-transform-style: preserve-3d;
+    -o-transform: rotateY(0deg);
+    -ms-transition: 0.6s;
+    -ms-transform-style: preserve-3d;
+    -ms-transform: rotateY(0deg);
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.block-2 .front {
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    z-index: 2;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.block-2 .front:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -moz-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(18%, transparent), color-stop(99%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+    background: -o-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
+}
+
+.block-2 .front .box {
+    position: absolute;
+}
+
+.block-2 .front .box h2,
+.block-2 .front .box p {
+    color: #fff;
+    margin: 10px 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.block-2 .back {
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
+    -webkit-transform: rotateY(-180deg);
+    -moz-transform: rotateY(-180deg);
+    -o-transform: rotateY(-180deg);
+    -ms-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
+
+/* for category */
+.img-card:hover {
+    background-color: white
 }
 
 /*for img of parntership */
