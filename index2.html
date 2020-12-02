@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lindir</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <link href="assets/css/style3.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7aacba508.js" crossorigin="anonymous"></script>
+</head>
+<body class="blue-gradient">
+    <div class="container fixed-bottom mb-5 text-right">
+        <a href="#" class="button-top shadow text-white"><i class="icon-top fas fa-angle-double-up"></i></a>
+    </div>
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/logo-tp.png" alt="logo" width="100px" height="80px" class="d-inline-block align-top" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> <!--pengatur toggle nya-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item mx-2">
+                        <form class="form-inline">
+                            <input class="form-control search mr-sm-2 rounded-pill"  type="search" placeholder="Search" aria-label="Search">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <button class="btn my-sm-0 rounded-circle" type="submit">
+                                        <i class="fas fa-search text-black-50"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </li>
+                    <li class="nav-item mx-2 active">
+                        <a class="nav-link link js-scroll-trigger text-primary active" href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link mx-2 js-scroll-trigger text-primary" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link mx-2 text-primary" href="#scroll">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link mx-2 js-scroll-trigger text-primary" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link mx-2 js-scroll-trigger text-primary" href="#">News</a>
+                    </li>
+                    <li class="nav-item nav-btn">
+                        <a class="nav-link  mx-2 btn  btn-primary text-white tombol px-3" href="login.html">LOGIN</a>
+                    </li>
+                    <li class="nav-item text-white">
+                        <a class="nav-link mx-2 js-scroll-trigger" href="#">
+                            <div class="custom-control custom-wsitch">
+                                <input type="checkbox" class="custom-control-input" id="switchDark">
+                                <label class="custom-control-label" for="switchDark">Dark mode</label>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron text-center">
+        <div class="container">
+            <h1>Lets Join Us</h1>
+            <a href="#" class="text-decoration-none">JOIN</a>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="container bg-bluesky mb-5 text-white shadow-lg">
+            <div class="row py-5">
+                <div class="col text-center">
+                    <p class=" h2">Features</p>
+                </div>
+            </div>
+            <div class="row py-5 bg-whiteman text-dark carousel slide" id="slider" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="col carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 shadow-sm text-center">
+                                <h1>Goself</h1>
+                            </div>
+                            <div class="col-md-8 col-sm-6 px-2">
+                                <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i2jFN_QEcS4?rel=0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-6 shadow-sm text-center border ">
+                                <h1>Goself</h1>
+                            </div>
+                            <div class="col-md-8 col-sm-6 px-2">
+                                <!--<div class="embed-responsive embed-responsive-16by9">
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/i2jFN_QEcS4?controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                                </div-->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                    <i class="fas fa-chevron-left font-next text-primary" aria-hidden="true"></i>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                    <i class="fas fa-chevron-right font-next text-primary" aria-hidden="true"></i>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>  
+        </div>
+    </div>
+    <div class="container bg-eks shadow">
+        <div class="row">
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container border-danger my-5 shadow text-dark text-center">
+            <div class="row bg-bluesky">
+                <div class="col py-5">
+                    <h1>Categories Sell</h1>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 card-deck bg-whiteman pb-5">
+                <div class="col pt-5 ">
+                    <div class="card h-100 bg-whitefor shadow mb-5">
+                        <img src="assets/img/produk2.png" class="card-img-top img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-uppercase bg-bluesky w-100 py-2 rounded">Protect Yourself</h5>
+                                <p class="card-text text-left">You don't worry if you go alone because Lindir can protect yourself from criminal, One time police help you from danger situation</p>
+                                <p class="card-text text-left">Lindir always protect you and always beside you. You just push one button and we will protect you.</p>
+                                <button class="btn btn-primary mt-4 w-50 rounded-pill" type="submit">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pt-5 ">
+                    <div class="card h-100 bg-whitefor shadow mb-5">
+                        <img src="assets/img/produk1.png" class="card-img-top img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-uppercase bg-bluesky w-100 py-2 rounded">Protect Yourhome</h5>
+                            <p class="card-text text-left">You don't worry if you leave home because Lindir can protect yourhome from criminal and send ther report for your device, One time police go to your home and caught the thief. So your home clear from steal</p>
+                            <p class="card-text text-left">You don't worry if you go alone because Lindir can protect yourself from criminal, One time police help you from danger situation</p>
+                            <button class="btn btn-primary mt-4 w-50 rounded-pill" type="submit">More</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pt-5 ">
+                    <div class="card h-100 bg-whitefor shadow mb-5">
+                        <img src="assets/img/produk3.png" class="card-img-top img-card" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title text-center text-uppercase bg-bluesky w-100 py-2 rounded">Smart Home</h5>
+                            <p class="card-text text-left">Lindir can make your family everyday feel happy. Lindir make you home be smarthome. AI support to be autonomus home. Make the happy stories</p>
+                            <p class="card-text text-left">We have more device support by google and amazon. All device from your home can your configure from your smarthpone. Always easy to configure</p>
+                            <button class="btn btn-primary mt-4 w-50 rounded-pill" type="submit">More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-eks shadow">
+        <div class="row">
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container border-danger my-5 shadow text-dark text-center">
+            <div class="row bg-bluesky">
+                <div class="col py-5">
+                    <h1>Price List</h1>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 card-deck bg-whiteman pb-5">
+                <div class="col pt-5 ">
+                    <div class="card h-100 bg-whitefor shadow mb-5">
+                        <div class="top">
+                            <h5 class="card-title text-center text-uppercase w-100 rounded">Standard<br>protection</h5>
+                        </div>
+                        <div class="card-body top-card">
+                            <p class="card-text text-left">You don't worry if you go alone because Lindir can protect yourself from criminal, One time police help you from danger situation</p>
+                        </div>
+                        <div class="bottom">
+                            <button class="btn btn-primary mt-4 w-75" type="submit">buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pt-5 ">
+                    <div class="card h-100 bg-whitefor shadow mb-5">
+                        <div class="top">
+                            <h5 class="card-title text-center text-uppercase w-100 rounded">Alone</h5>
+                        </div>
+                        <div class="card-body top-card">
+                            <p class="card-text text-left">You don't worry if you go alone because Lindir can protect yourself from criminal, One time police help you from danger situation</p>
+                        </div>
+                        <div class="bottom">
+                            <button class="btn btn-primary mt-4 w-75" type="submit">buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col pt-5 ">
+                    <div class="card h-100 bg-whitefor shadow mb-5">
+                        <div class="top">
+                            <h5 class="card-title text-center text-uppercase w-100 rounded">Standard Alone</h5>
+                        </div>
+                        <div class="card-body top-card">
+                            <p class="card-text text-left">You don't worry if you go alone because Lindir can protect yourself from criminal, One time police help you from danger situation</p>
+                        </div>
+                        <div class="bottom">
+                            <button class="btn btn-primary mt-4 w-75 " type="submit">buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container bg-eks shadow">
+        <div class="row">
+            <br>
+            <br>
+            <br>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="container bg-bluesky my-5 text-white shadow-lg">
+            <div class="row py-5">
+                <div class="col text-center">
+                    <p class=" h2">System</p>
+                </div>
+            </div>
+            <div class="row py-5 bg-whiteman text-black-50">
+                <div class="col-md-6 col-sm-6 shadow-sm text-center border">
+                    <div class="mb-4">
+                        <h1>Step by Step</h1>
+                    </div>
+                    <div class="py-auto">
+                        <ul class="navbar-nav size-font  ">
+                            <li class="nav-item ">
+                                <a class="nav-link " href="#collapseExample"  data-toggle="collapse"role="button" aria-expanded="false" aria-controls="collapseExample">
+                                    <i class="fab fa-autoprefixer bg-bluesky py-2 px-2 rounded-circle"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="#warning"  data-toggle="collapse"role="button" aria-expanded="false" aria-controls="warning">
+                                    <i class="fas fa-exclamation bg-bluesky"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#mail" data-toggle="collapse"role="button" aria-expanded="false" aria-controls="mail"><i class="fas fa-cloud"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#security" data-toggle="collapse"role="button" aria-expanded="false" aria-controls="mail"><i class="fas fa-user-shield"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 px-2">
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                        </div>
+                    </div>
+                    <div class="collapse" id="warning">
+                        <div class="card card-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatem quibusdam ipsam rerum et suscipit praesentium aspernatur at, enim distinctio eaque quas est laborum repellat non dolore odit nemo iusto sunt accusantium nisi sint quaerat placeat? Praesentium laudantium dignissimos ab delectus unde, iusto aliquid voluptatem error placeat asperiores suscipit tempore ex cupiditate necessitatibus, accusamus nobis, consectetur sed molestiae id ipsam voluptatibus sapiente a commodi quibusdam. Illum, commodi cumque voluptate quidem quae numquam earum magni doloremque debitis quo, voluptates quia corrupti. Consequatur, natus! Doloremque earum commodi quae, sit quis laborum nesciunt vitae nostrum iste repellat ipsam pariatur? Molestiae impedit expedita explicabo.
+                        </div>
+                    </div>
+                    <div class="collapse" id="mail">
+                        <div class="card card-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatem quibusdam ipsam rerum et suscipit praesentium aspernatur at, enim distinctio eaque quas est laborum repellat non dolore odit nemo iusto sunt accusantium nisi sint quaerat placeat? Praesentium laudantium dignissimos ab delectus unde, iusto aliquid voluptatem error placeat asperiores suscipit tempore ex cupiditate necessitatibus, accusamus nobis, consectetur sed molestiae id ipsam voluptatibus sapiente a commodi quibusdam. Illum, commodi cumque voluptate quidem quae numquam earum magni doloremque debitis quo, voluptates quia corrupti. Consequatur, natus! Doloremque earum commodi quae, sit quis laborum nesciunt vitae nostrum iste repellat ipsam pariatur? Molestiae impedit expedita explicabo.
+                        </div>
+                    </div>
+                    <div class="collapse" id="security">
+                        <div class="card card-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero voluptatem quibusdam ipsam rerum et suscipit praesentium aspernatur at, enim distinctio eaque quas est laborum repellat non dolore odit nemo iusto sunt accusantium nisi sint quaerat placeat? Praesentium laudantium dignissimos ab delectus unde, iusto aliquid voluptatem error placeat asperiores suscipit tempore ex cupiditate necessitatibus, accusamus nobis, consectetur sed molestiae id ipsam voluptatibus sapiente a commodi quibusdam. Illum, commodi cumque voluptate quidem quae numquam earum magni doloremque debitis quo, voluptates quia corrupti. Consequatur, natus! Doloremque earum commodi quae, sit quis laborum nesciunt vitae nostrum iste repellat ipsam pariatur? Molestiae impedit expedita explicabo.
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </div>
+    <div class="jumbotron text-center" id="jumbotron-bottom">
+        <div class="container">
+            <!--<h1>Lets Join Us</h1>
+            <a href="#" class="text-decoration-none">JOIN</a>-->
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white pt-5">
+        <div class="container">
+            <div  class="row footer border-bottom">
+                <div class="col-md-3 col-sm-12">
+                    <h5 class="mb-4">Kontak Kami</h5>
+                    <img src="assets/img/logo-tp2.png" alt="" class="mb-2">
+                    <p>Alamat :</p>
+                    <p>Penerbangan Street No.8 Medan, North Sumatera 20219</p>
+                    <p>Call Center :</p>
+                    <p>(+62) 821 6578 7290</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5>COMPANY</h5>
+                    <ul class="nav flex-column mt-3">
+                        <li class="mb-3"><a href="about.html" class="">About</a></li>
+                        <li class="mb-3"><a href="#" class="">Certification</a></li>
+                        <li class="mb-3"><a href="#" class="">Partnership</a></li>
+                        <li class="mb-3"><a href="#" class="k">Awards</a></li>
+                        <li class="mb-3"><a href="#" class="k">Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5>PRODUCT</h5>
+                    <ul class="nav flex-column mt-3">
+                        <li class="mb-3"><a href="#" class="">Categories Sells</a></li>
+                        <li class="mb-3"><a href="#" class="">Track System</a></li>
+                        <li class="mb-3"><a href="#" class="k">House Security</a></li>
+                        <li class="mb-3"><a href="#" class="k">Smart Home</a></li>
+                        <li class="mb-3"><a href="#" class="">Online Report</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <h5>SPECIAL PRODUCT</h5>
+                    <ul class="nav flex-column mt-3">
+                        <li class="mb-3"><a href="#" class="">Big Project</a></li>
+                        <li class="mb-3"><a href="#" class="">Goself</a></li>
+                        <li class="mb-3"><a href="#" class="">Hansip Keep</a></li>
+                        <li class="mb-3"><a href="#" class="k">Detector Maling</a></li>
+                        <li class="mb-3"><a href="#" class="k">AI Home</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-10 col-sm-6">
+                    <p>© 2019 Lindir International GmbH. All rights reserved.</p>
+                </div>
+                <div class="col-md-10 col-sm-6">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/darkmode.min.js"></script>
+    <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

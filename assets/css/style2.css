@@ -3,10 +3,18 @@
     background-color: #f2f8ff;
 }
 
+.bg-whiteman {
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+.bg-bluesky-ukuran {
+    background-color: #4d94e0;
+    color: #ffff;
+}
+
 .bg-bluesky {
     background-color: #4d94e0;
     color: #ffff;
-    height: 30px;
 }
 
 .bg-bluetray {
@@ -15,22 +23,16 @@
 }
 
 .bg-eks {
-    background: #ad5389;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
-    /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #3c1053, #ad5389);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
-.blue-gradient {
-    background: #536976;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #292E49, #536976);
-    /* Chrome 10-25, Safari 5.1-6 */
+.dark-gradient {
     background: linear-gradient(to right, #292E49, #536976);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.blue-gradient {
+    background: linear-gradient(to right, #292E49, #536976);
 }
 
 .shadow-white {
@@ -48,21 +50,22 @@
 }
 
 /* for jumbotron */
+
 .jumbotron {
     background-image: url(../img/SmartTechnology.jpg);
     background-size: cover;
-    height: 670px;
+    height: 85vh;
+    background-position: center;
+    color: #ffff;
 }
 
-.jumbotron .container {
-    color: white;
-    text-align: right;
-    margin-top: 100px;
+.jumbotron h1 {
+    margin: 30px 0;
+    font-size: 80px;
+    line-height: 1.5;
 }
 
 .jumbotron a {
-    margin-right: 120px;
-    text-align: center;
     font-family: OpenSans-Regular;
     font-size: 30px;
     color: white;
@@ -93,70 +96,60 @@
 }
 
 /* for card title*/
+/* class block 2 jadi 3d anglenya sebesar 500px*/
 .block-2 {
-    -webkit-perspective: 1000;
-    -moz-perspective: 1000;
-    -ms-perspective: 1000;
-    perspective: 1000;
+    perspective: 500px;
 }
 
+/* merotasi kan card ketika di hover bagian class bac*/
 .block-2:hover .back,
 .block-2.hover .back {
-    -webkit-transform: rotateY(0deg);
-    -moz-transform: rotateY(0deg);
-    -o-transform: rotateY(0deg);
-    -ms-transform: rotateY(0deg);
     transform: rotateY(0deg);
 }
 
+/* merotasi kan card ketika di hover bagian class fronnt*/
 .block-2:hover .front,
 .block-2.hover .front {
-    -webkit-transform: rotateY(180deg);
-    -moz-transform: rotateY(180deg);
-    -o-transform: rotateY(180deg);
-    transform: rotateY(180deg);
+    transform: rotateY(90deg);
 }
 
+
+/*ukuran dari block */
 .block-2,
 .block-2 .front,
 .block-2 .back {
+    border: solid 1px white;
     width: 100%;
+    /*karena absolut jadi harus dibuat ukuran dimensi */
     height: 327px;
 }
 
 .block-2 .front,
 .block-2 .back {
     backface-visibility: hidden;
+    /*menghilangkan bagian di belakang dimensi */
     border-radius: 4px;
     transition: 0.6s;
-    -webkit-transition: 0.6s;
-    -webkit-transform-style: preserve-3d;
-    -webkit-transform: rotateY(0deg);
-    -moz-transition: 0.6s;
-    -moz-transform-style: preserve-3d;
-    -moz-transform: rotateY(0deg);
-    -o-transition: 0.6s;
-    -o-transform-style: preserve-3d;
-    -o-transform: rotateY(0deg);
-    -ms-transition: 0.6s;
-    -ms-transform-style: preserve-3d;
-    -ms-transform: rotateY(0deg);
-    transition: 0.6s;
+    /* lama waktu transisi */
     transform-style: preserve-3d;
+    /*pada saat transisi terasa tembus */
     transform: rotateY(0deg);
     position: absolute;
     top: 0;
     left: 0;
 }
 
+/* css untuk class front*/
 .block-2 .front {
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    /*efek gradient warna*/
     z-index: 2;
+    /*membuat klas dimensi z front berada di kelas 2*/
     background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    /*ukuran background memenuhi isi elemen */
 }
 
+/* css untuk class menambahkan element sebelum front:before
 .block-2 .front:before {
     content: '';
     position: absolute;
@@ -171,11 +164,14 @@
     background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
 }
+*/
 
 .block-2 .front .box {
     position: absolute;
+    /*posisi box naik satu tingkat dimensi dengan style absolute*/
 }
 
+/* style p2 dan h2*/
 .block-2 .front .box h2,
 .block-2 .front .box p {
     color: #fff;
@@ -184,15 +180,14 @@
     line-height: 1.5;
 }
 
+/*style class back*/
 .block-2 .back {
-    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);
-    -webkit-box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
+    /*background: linear-gradient(to right, #3c1053, #ad5389);*/
+    /*efel bayangan*/
     box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
-    -webkit-transform: rotateY(-180deg);
-    -moz-transform: rotateY(-180deg);
-    -o-transform: rotateY(-180deg);
-    -ms-transform: rotateY(-180deg);
+    /*memindahkan posisi sebesar -180deg */
     transform: rotateY(-180deg);
+
 }
 
 /* for category */

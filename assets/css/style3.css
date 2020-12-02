@@ -1,0 +1,419 @@
+[data-theme="dark"] {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+    color: #eee;
+}
+
+[data-theme="dark"] .blue-gradient {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+}
+
+[data-theme="dark"] .bg-bluesky {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+}
+
+[data-theme="dark"] .bg-whiteman {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+}
+
+[data-theme="dark"] .bg-whitefor {
+    background-color: #343a40 !important;
+    color: white !important;
+
+}
+
+[data-theme="dark"] .button-top {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+}
+
+[data-theme="dark"] .button-top .icon-top {
+    color: rgb(196, 99, 196) !important;
+}
+
+[data-theme="dark"] .text-primary {
+    color: white !important;
+}
+
+[data-theme="dark"] .text-primary:hover {
+    color: white !important;
+}
+
+[data-theme="dark"] .link:hover::after {
+    border-bottom: 3px solid white !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+}
+
+[data-theme="dark"] .bg-black {
+    background-color: #eee !important;
+}
+
+/*background*/
+.bg-lightblue {
+    background-color: #f2f8ff;
+}
+
+.bg-whiteman {
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+.bg-whitefor {
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+.bg-bluesky-ukuran {
+    background-color: #4d94e0;
+    color: #ffff;
+}
+
+.bg-bluesky {
+    background-color: #4d94e0;
+    color: #ffff !important;
+}
+
+.bg-bluetray {
+    background-color: #4d94e0;
+    color: white;
+}
+
+.bg-eks {
+    background: linear-gradient(to right, #3c1053, #ad5389);
+
+}
+
+.dark-gradient {
+    background: linear-gradient(to right, #292E49, #536976);
+}
+
+.blue-gradient {
+    background: linear-gradient(to right, #00B4DB, #0083B0);
+}
+
+.shadow-white {
+    box-shadow: 0 0 1rem rgba(67, 0, 73, 0.808) !important
+}
+
+/*tombol back up*/
+.button-top {
+    font-size: 20px;
+    transition: font-size 1s;
+    background-color: #4d94e0;
+    border-radius: 50%;
+    padding: 15px 20px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.button-top:hover {
+
+    font-size: 25px;
+
+}
+
+.button-top .icon-top {
+    color: white;
+}
+
+/*padding */
+.ctn-partner div {
+    margin: 30px 83px 10px 83px;
+}
+
+/* navbar */
+
+.nav-item .tombol {
+    border-radius: 40px;
+}
+
+/*
+.link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #4d94e0;
+    width: 50%;
+    margin: auto;
+}
+*/
+/* for jumbotron */
+
+.jumbotron {
+    background: black;
+    background-image: url(../img/homesecurity.jpg);
+    background-size: cover;
+    height: 86vh;
+    background-position: center;
+    color: #ffff;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    left: 0;
+    bottom: 0;
+}
+
+.jumbotron h1 {
+    position: relative;
+    z-index: 1;
+    margin: 30px 0;
+    font-size: 75px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.jumbotron a {
+    font-size: 25px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    background: #8db70e;
+}
+
+.jumbotron a:hover {
+    color: white;
+    background: #c0ff00f7;
+}
+
+/* form Login */
+.login {
+    background-image: linear-gradient(to right, #83a4d4, #b6fbff);
+    width: 100%;
+    height: 100vh;
+    background-size: 200%;
+}
+
+.form-container {
+    position: relative;
+    margin: auto;
+    top: 15vh;
+    background-color: #ffff;
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #000;
+}
+
+/*for laptop*/
+@media (min-width: 992px) {
+    .login {
+        background-size: 200%;
+    }
+
+    .form-container {
+        margin: auto;
+        width: 30%;
+    }
+
+    .jumbotron h1 {
+        font-size: 80px;
+    }
+
+    .link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #4d94e0;
+        width: 0px;
+        transition: width 4s 1s;
+        width: 100%;
+        margin: auto;
+        margin-bottom: -3px;
+    }
+
+    .nav-btn:hover {
+        border-bottom: 3px solid black;
+        border-radius: 80px;
+        margin-bottom: -3px;
+    }
+}
+
+/* for carousel / slider */
+.carousel-item {
+    max-height: 730px;
+}
+
+.input-group input {
+    background-color: transparent;
+    color: red;
+}
+
+.font-next {
+    font-size: 50px;
+}
+
+/*for title text of container*/
+.title-me {
+    font-size: 23px;
+}
+
+/* for card title*/
+/* class block 2 jadi 3d anglenya sebesar 500px*/
+.block-2 {
+    perspective: 500px;
+}
+
+/* merotasi kan card ketika di hover bagian class bac*/
+.block-2:hover .back,
+.block-2.hover .back {
+    transform: rotateY(0deg);
+}
+
+/* merotasi kan card ketika di hover bagian class fronnt*/
+.block-2:hover .front,
+.block-2.hover .front {
+    transform: rotateY(90deg);
+}
+
+
+/*ukuran dari block */
+.block-2,
+.block-2 .front,
+.block-2 .back {
+    border: solid 1px white;
+    width: 100%;
+    /*karena absolut jadi harus dibuat ukuran dimensi */
+    height: 327px;
+}
+
+.block-2 .front,
+.block-2 .back {
+    backface-visibility: hidden;
+    /*menghilangkan bagian di belakang dimensi */
+    border-radius: 4px;
+    transition: 0.6s;
+    /* lama waktu transisi */
+    transform-style: preserve-3d;
+    /*pada saat transisi terasa tembus */
+    transform: rotateY(0deg);
+    top: 0;
+    left: 0;
+}
+
+/* css untuk class front*/
+.block-2 .front {
+    background: linear-gradient(to right, #3c1053, #ad5389);
+    /*efek gradient warna*/
+    z-index: 2;
+    /*membuat klas dimensi z front berada di kelas 2*/
+    background-size: cover;
+    /*ukuran background memenuhi isi elemen */
+}
+
+/* css untuk class menambahkan element sebelum front:before
+.block-2 .front:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: -moz-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(18%, transparent), color-stop(99%, rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8)));
+    background: -o-linear-gradient(top, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0, 0, 0, 0.8) 99%, rgba(0, 0, 0, 0.8) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#cc000000', GradientType=0);
+}
+*/
+
+/*style class back*/
+.block-2 .back {
+    /*background: linear-gradient(to right, #3c1053, #ad5389);*/
+    /*efel bayangan*/
+    box-shadow: 0 0 70px -10px rgba(0, 0, 0, 0.4);
+    /*memindahkan posisi sebesar -180deg */
+    transform: rotateY(-180deg);
+
+}
+
+/* price list*/
+.top {
+    clip-path: polygon(0% 0%, 100% 0, 100% 75%, 50% 100%, 0 75%);
+    background-color: teal;
+    color: white;
+    width: 80%;
+    padding: 20px;
+    margin: 0px auto;
+    margin-top: -20px;
+}
+
+.bottom {
+    color: white;
+    width: 80%;
+    padding-top: 5px;
+    margin: 0px auto;
+    margin-bottom: -20px;
+}
+
+.bottom button {
+
+    text-transform: uppercase;
+}
+
+/*step*/
+.size-font {
+    font-size: 45px;
+}
+
+/* for category */
+.img-card:hover {
+    background-color: white
+}
+
+/*for img of parntership */
+.partenrship {
+    height: 150px;
+    width: 150px;
+}
+
+/* awards */
+.awards img {
+    width: 100px;
+    height: 100px;
+}
+
+/* maps */
+.map {
+    width: auto;
+    height: 450px;
+}
+
+/*jumbotorn bottom*/
+#jumbotron-bottom {
+    box-shadow: 1em 0 .4em black;
+    background-image: url(../img/SmartTechnology.jpg) !important;
+    background-size: cover;
+    height: 55vh !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+}
+
+/* footer */
+.footer img {
+    width: 200px;
+    height: 100px;
+}
+
+.footer li a {
+    color: white;
+}
+
+.footer li a:hover {
+    color: violet;
+}
+
+/*for tablet*/
+@media (min-width: 768px) {
+    .footer img {
+        width: 150px;
+        height: 100px;
+    }
+}
