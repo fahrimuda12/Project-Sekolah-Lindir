@@ -1,0 +1,240 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+[data-theme="dark"] {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+    color: #eee;
+}
+
+[data-theme="dark"] .blue-gradient {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+}
+
+[data-theme="dark"] .bg-bluesky {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+}
+
+[data-theme="dark"] .bg-whiteman {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+}
+
+[data-theme="dark"] .bg-whitefor {
+    background-color: #343a40 !important;
+    color: white !important;
+
+}
+
+[data-theme="dark"] .button-top {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+}
+
+[data-theme="dark"] .button-top .icon-top {
+    color: rgb(196, 99, 196) !important;
+}
+
+[data-theme="dark"] .text-primary {
+    color: white !important;
+}
+
+[data-theme="dark"] .text-primary:hover {
+    color: white !important;
+}
+
+[data-theme="dark"] .link:hover::after {
+    border-bottom: 3px solid white !important;
+}
+
+[data-theme="dark"] .bg-white {
+    background: linear-gradient(to right, #292E49, #536976) !important;
+}
+
+[data-theme="dark"] .bg-black {
+    background-color: #eee !important;
+}
+
+/* background */
+.blue-gradient {
+    background: linear-gradient(to right, #00B4DB, #0083B0);
+}
+
+.bg-eks {
+    background: linear-gradient(to right, #3c1053, #ad5389);
+}
+
+.bg-bluesky {
+    background-color: #4d94e0;
+    color: #ffff !important;
+}
+
+.bg-whiteman {
+    background-color: rgba(255, 255, 255, 0.87);
+}
+
+/*tombol back up*/
+.button-top {
+    font-size: 20px;
+    transition: font-size 1s;
+    background-color: #4d94e0;
+    border-radius: 50%;
+    padding: 15px 20px;
+    box-shadow: 10px 5px 5px black;
+}
+
+.button-top:hover {
+
+    font-size: 25px;
+
+}
+
+.button-top .icon-top {
+    color: white;
+}
+
+/* navbar */
+.nav-item .tombol {
+    border-radius: 40px;
+}
+
+@media (min-width: 992px) {
+
+    .link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #4d94e0;
+        width: 0px;
+        transition: width 4s 1s;
+        width: 100%;
+        margin: auto;
+        margin-bottom: -3px;
+    }
+
+    .nav-btn:hover {
+        border-bottom: 3px solid black;
+        border-radius: 80px;
+        margin-bottom: -3px;
+    }
+}
+
+/*banner */
+.banner {
+    background-image: url(../img/homesecurity.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+
+/*banner carousel*/
+@media (min-width: 992px) {
+    .left-top {
+        left: 0px !important;
+    }
+
+    .right-top {
+        right: 0px !important;
+    }
+}
+
+/* for jumbotron */
+
+.jumbotron {
+    background: black;
+    background-image: url(../img/homesecurity.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    color: #ffff;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    left: 0;
+    bottom: 0;
+}
+
+.banner h1 {
+    position: relative;
+    z-index: 1;
+    margin: 30px 0;
+    font-size: 75px;
+    line-height: 1.5;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+}
+
+.banner a {
+    font-size: 25px;
+    position: relative;
+    z-index: 1;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 30px;
+    background: #8db70e;
+}
+
+.banner a:hover {
+    color: white;
+    background: #c0ff00f7;
+}
+
+/*for laptop Jumbotron*/
+@media (min-width: 992px) {
+    .jumbotron h1 {
+        font-size: 80px;
+    }
+}
+
+/* Carousel*/
+
+.font-next {
+    font-size: 60px;
+}
+
+@media (min-width: 992px) {
+    #control-left-bottom {
+        left: -100px !important;
+    }
+
+    #control-right-bottom {
+        right: -100px !important;
+    }
+}
+
+/*jumbotorn bottom*/
+#jumbotron-bottom {
+    box-shadow: 1em 0 .4em black;
+    background-image: url(../img/SmartTechnology.jpg) !important;
+    background-size: cover;
+    height: 55vh !important;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 0px;
+}
+
+/* footer */
+.footer img {
+    width: 200px;
+    height: 100px;
+}
+
+.footer li a {
+    color: white;
+}
+
+.footer li a:hover {
+    color: violet;
+}
+
+/*for tablet*/
+@media (min-width: 768px) {
+    .footer img {
+        width: 150px;
+        height: 100px;
+    }
+}

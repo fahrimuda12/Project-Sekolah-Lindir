@@ -8,55 +8,230 @@
     color: white;
 }
 
+.bg-color-mean {
+    position: relative;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.bg-color-mean h1 {
+    position: relative;
+    z-index: 3;
+    color: white;
+}
+
 /*padding */
 .ctn-partner div {
     margin: 30px 83px 10px 83px;
 }
 
 /* for jumbotron */
+
 .jumbotron {
-    background: black;
-    background-image: url(https://admin.workforce.com/wp-content/uploads/sites/2/2018/12/AI-is-coming-%E2%80%94-and-HR-is-not-prepared.jpg);
-    background-size: cover;
+    background: linear-gradient(to right, #4b6cb7, #182848) !important;
     height: 670px;
     background-position: center;
-    color: #ffff;
-    position: relative;
+    color: white;
 }
 
-.jumbotron::after {
-    content: '';
-    display: block;
-    width: 100%;
-    height: 50%;
-    position: absolute;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
-    left: 0;
-    bottom: 0;
-}
 
-.jumbotron h1 {
+.jumbotron .text-lindir {
     position: relative;
     z-index: 1;
-    margin: 30px 0;
+    margin: 50% 0 0 0;
     font-size: 75px;
     line-height: 1.5;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(73, 180, 223, 0.6);
 }
 
-.jumbotron a {
+
+.jumbotron p {
+    margin-top: -20px;
+    letter-spacing: 2px;
+}
+
+.jumbotron .orange-link {
     font-size: 25px;
-    position: relative;
-    z-index: 1;
-    color: white;
-    border-radius: 15px;
-    padding: 10px 30px;
-    background: #8db70e;
+    position: absolute;
+    z-index: 2;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 135px;
+    right: 6%;
+    background: #FF7948;
+    opacity: 0.33;
 }
 
-.jumbotron a:hover {
+.jumbotron .orange-link:hover {
     color: white;
-    background: #c0ff00f7;
+    background: #FF7948;
+    opacity: 1;
+}
+
+
+.jumbotron .orange-link:focus {
+    color: #fff;
+    background-color: #c88623;
+    border-color: #bd6c21;
+    box-shadow: 0 0 0 .2rem rgba(225, 163, 83, 0.5);
+}
+
+.jumbotron .yellow-link {
+    font-size: 25px;
+    position: absolute;
+    z-index: 3;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 120px;
+    right: 13.7%;
+    background: yellow;
+    opacity: 0.33;
+}
+
+.jumbotron .yellow-link:hover {
+    color: white;
+    background: yellow;
+    opacity: 1;
+}
+
+.jumbotron .yellow-link:focus {
+    color: #fff;
+    background-color: #c8c523;
+    border-color: #b3bd21;
+    box-shadow: 0 0 0 .2rem rgba(225, 83, 97, .5);
+}
+
+.jumbotron .blue-link {
+    font-size: 25px;
+    position: absolute;
+    z-index: 4;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    top: 100px;
+    right: 8.7%;
+    background: #4d94e0;
+    opacity: 0.33;
+}
+
+.jumbotron .blue-link:hover {
+    color: white;
+    background: #4d94e0;
+    opacity: 1;
+}
+
+@media (min-width: 576px) {
+    .jumbotron .text-lindir {
+        margin: 100px 0 0 0;
+        font-size: 180px;
+        line-height: 1.5;
+    }
+
+    .jumbotron p {
+        margin-top: -50px;
+        margin-left: 350px;
+        letter-spacing: 2px;
+    }
+
+    .jumbotron .orange-link {
+        width: 100px;
+        height: 100px;
+        top: 100px;
+        right: 21%;
+    }
+
+    .jumbotron .yellow-link {
+        width: 100px;
+        height: 100px;
+        top: 80px;
+        right: 25.7%;
+    }
+
+    .jumbotron .blue-link {
+        width: 100px;
+        height: 100px;
+        top: 40px;
+        right: 20.7%;
+    }
+}
+
+/* for visi misi */
+.container-visi {
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    color: #fff;
+    line-height: 20px;
+    background-color: grey;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.container-visi:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid red;
+}
+
+.container-visi::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-top: 12px solid grey;
+    position: absolute;
+    top: 70px;
+    right: 45%;
+}
+
+.container-misi {
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    color: #fff;
+    line-height: 20px;
+    background-color: grey;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.container-misi:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid red;
+}
+
+.container-misi::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 12px solid grey;
+    position: absolute;
+    top: -5px;
+    right: 45%;
+}
+
+@media (min-width: 768px) {
+    .container-visi::before {
+        border-top: 18px solid transparent;
+        border-bottom: 18px solid transparent;
+        border-left: 12px solid grey;
+        top: 16px;
+        right: -28px;
+    }
+
+    .container-misi::before {
+        border-top: 18px solid transparent;
+        border-bottom: 18px solid transparent;
+        border-right: 12px solid grey;
+        top: 16px;
+        left: -28px;
+    }
 }
 
 /*for title text of container*/
@@ -68,6 +243,10 @@
 .partenrship {
     height: 150px;
     width: 150px;
+}
+
+.partenrship:hover {
+    transform: scale(1.1);
 }
 
 /* awards */

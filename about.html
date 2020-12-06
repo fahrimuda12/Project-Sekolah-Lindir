@@ -12,54 +12,83 @@
     </head>
     <body>
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo-tp2.png" alt="logo" width="100px" height="50px" class="d-inline-block align-top" loading="lazy">
-                </a>
-                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item mx-2">
-                            <form class="form-inline">
-                                <input class="form-control search mr-sm-2 rounded-pill"  type="search" placeholder="Search" aria-label="Search">
-                                <div class="input-group">
-                                    <div class="input-group-prepend">
-                                        <button class="btn my-sm-0 rounded-circle" type="submit">
-                                            <i class="fas fa-search text-black-50"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </li>
-                        <li class="nav-item mx-2 active">
-                            <a class="nav-link link js-scroll-trigger text-primary active" href="index.html">Home </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link mx-2 js-scroll-trigger text-primary" href="#">Features</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link mx-2 text-primary" href="#scroll">Categories</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link mx-2 js-scroll-trigger text-primary" href="#">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link link mx-2 js-scroll-trigger text-primary" href="#">News</a>
-                        </li>
-                        <li class="nav-item nav-btn">
-                            <a class="nav-link  mx-2 btn  btn-primary text-white tombol px-3" href="#">LOGIN</a>
-                        </li>
-                    </ul>
-                </div>
+        <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white shadow" id="scroll-nav">
+            <a class="navbar-brand ml-md-5" href="#">
+                <img src="assets/img/logo-ico.png" alt="logo" width="100" height="50" class="d-inline-block align-top" loading="lazy">
+            </a>
+            <button class="navbar-toggler" id="toggle-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> <!--pengatur toggle nya-->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <form class="form-inline  ml-md-5  mt-md-2">
+                    <input class="form-control search mr-sm-2 rounded-pill "  type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn rounded-circle my-2 my-sm-0" type="submit">
+                                <i class="fas fa-search text-black-50"></i>
+                            </button>
+                </form>
+                <ul class="navbar-nav mx-auto mt-md-2">
+                    <li class="nav-item mx-2 active">
+                        <a class="nav-link link  text-primary active" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link  text-primary" href="#section-feature">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link  text-primary" href="#section-categories">Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link  text-primary" href="#section-pricelist">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link  text-primary" href="#section-system">System</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link  text-primary" href="#">News</a>
+                    </li>
+                    <li class="nav-item nav-btn">
+                        <a class="nav-link  btn  btn-primary text-white tombol px-3" href="login.html">LOGIN</a>
+                    </li>
+                </ul>
+                
             </div>
         </nav>
         <div class="jumbotron jumbotron-fluid">
             <div class="container text-center">
-                <h1 class="">Lets Join Us</h1>
-                <a href="#" class="text-decoration-none">JOIN</a>
+                <div class="row">
+                    <div class="col">
+                        <button onclick="orangeContainer()" class=" btn orange-link" type="button" data-target="#orange"  data-toggle="collapse" aria-label="Toggle navigation"></button>
+                        <button onclick="yellowContainer()" class=" btn yellow-link" type="button" data-target="#yellow"  data-toggle="collapse" aria-label="Toggle navigation"></button>
+                        <button onclick="blueContainer()" class=" btn blue-link" type="button" data-target="#blue"  data-toggle="collapse" aria-label="Toggle navigation"></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <h1 class="text-lindir">LinDir</h1>
+                        <p class=" text-uppercase">protection</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt-n4 mb-5 bg-color-mean" id="containerColor">
+            <div class="container accordion" id="accordionParent">
+                <div class="collapse" id="orange" aria-labelledby="title-one" data-parent="#accordionParent">
+                    <blockquote class="blockquote text-center py-4">
+                        <h1>"Kami mengutamakann kebahagiaan pengguna dalam semua pemakaian produk kami"</h1>
+                        <footer class="blockquote-footer"><cite title="Source Title">Orange</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="collapse" id="yellow"  aria-labelledby="title-two" data-parent="#accordionParent">
+                    <blockquote class="blockquote text-center py-4">
+                        <h1>"Kami mengutamakann kebahagiaan pengguna dalam semua pemakaian produk kami"</h1>
+                        <footer class="blockquote-footer"><cite title="Source Title">Orange</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="collapse" id="blue" aria-labelledby="title-three" data-parent="#accordionParent">
+                    <blockquote class="blockquote text-center py-4">
+                        <h1>"Kami mengutamakann kebahagiaan pengguna dalam semua pemakaian produk kami"</h1>
+                        <footer class="blockquote-footer"><cite title="Source Title">Orange</cite></footer>
+                    </blockquote>
+                </div>
             </div>
         </div>
         <div class="container">
@@ -70,6 +99,25 @@
                 </div>
                 <div class="col-lg-7 col-sm-12">
                     <img src="assets/img/Happy.jpg" class="img-fluid" alt="Responsive image">
+                </div>
+            </div>
+        </div>
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="container-visi text text-center text-capitalize">
+                        <p>
+                            To create a more comfortable and calm daily life for many people
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h1 class="text-center">VISI    MISI</h1>
+                </div>
+                <div class="col-md-4">
+                    <div class="container-misi text text-center text-capitalize">
+                        <p>kami selalu mengutamakann apa yang ingin kami capai</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -196,6 +244,20 @@
         </div>
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        function yellowContainer(){
+            var containerColor = document.getElementById("containerColor");
+            containerColor.style.background = "linear-gradient(to right, #f09819, #edde5d)";
+        }
+        function orangeContainer(){
+            var containerColor = document.getElementById("containerColor");
+            containerColor.style.background = "linear-gradient(to right, #ff512f, #f09819)";
+        }
+        function blueContainer(){
+            var containerColor = document.getElementById("containerColor");
+            containerColor.style.background = "linear-gradient(to right, #373b44, #4286f4)";
+        }
+    </script>
     <script>
 		 // fungsi initialize untuk mempersiapkan peta
         function initialize() {
@@ -212,5 +274,4 @@
         google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
 </body>
-    </body>
 </html>

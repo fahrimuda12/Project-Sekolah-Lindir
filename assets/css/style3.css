@@ -114,13 +114,16 @@
     color: white;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /*padding */
 .ctn-partner div {
     margin: 30px 83px 10px 83px;
 }
 
 /* navbar */
-
 .nav-item .tombol {
     border-radius: 40px;
 }
@@ -137,10 +140,11 @@
 /* for jumbotron */
 
 .jumbotron {
+    margin-top: -76px;
     background: black;
     background-image: url(../img/homesecurity.jpg);
     background-size: cover;
-    height: 86vh;
+    height: 100vh;
     background-position: center;
     color: #ffff;
     position: relative;
