@@ -101,11 +101,11 @@
 }
 
 .control-left-bottom {
-    left: -10px !important;
+    left: -5px !important;
 }
 
 .control-right-bottom {
-    right: -10px !important;
+    right: -5px !important;
 }
 
 @media (min-width: 992px) {
