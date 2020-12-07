@@ -94,6 +94,30 @@
     box-shadow: 0 0 1rem rgba(67, 0, 73, 0.808) !important
 }
 
+/* carousel atas*/
+.control-left-bottom,
+.control-right-bottom {
+    top: 80px !important;
+}
+
+.control-left-bottom {
+    left: -20px !important;
+}
+
+.control-right-bottom {
+    right: -20px !important;
+}
+
+@media (min-width: 992px) {
+    .control-left-bottom {
+        left: -70px !important;
+    }
+
+    .control-right-bottom {
+        right: -70px !important;
+    }
+}
+
 /*tombol back up*/
 .button-top {
     font-size: 20px;

@@ -170,6 +170,7 @@
 }
 
 .container-visi:hover {
+    margin: -1px 0;
     transform: scale(1.1);
     border-bottom: 2px solid red;
 }
@@ -199,6 +200,7 @@
 }
 
 .container-misi:hover {
+    margin: -1px 0;
     transform: scale(1.1);
     border-bottom: 2px solid red;
 }
@@ -232,6 +234,21 @@
         top: 16px;
         left: -28px;
     }
+}
+
+/* leader*/
+.leader-contain .figure-down figure img {
+    width: 75px;
+    height: 75px;
+    margin: 0 15px;
+    opacity: 0.6;
+}
+
+.leader-contain .figure-down figure img:hover {
+    margin: -12px 0px;
+    opacity: 1;
+    width: 87px;
+    height: 87px;
 }
 
 /*for title text of container*/

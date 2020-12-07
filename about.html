@@ -7,7 +7,7 @@
         <link href="assets/css/style.css" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
-        <script src="http://maps.googleapis.com/maps/api/js"></script>
+
         <script src="https://kit.fontawesome.com/c7aacba508.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -102,7 +102,8 @@
                 </div>
             </div>
         </div>
-        <div class="container my-5">
+        <section class="vision-contain bg-lightblue  my-5 py-5">
+          <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-4">
                     <div class="container-visi text text-center text-capitalize">
@@ -121,6 +122,44 @@
                 </div>
             </div>
         </div>
+        </section>
+        
+        <section class="leader-contain my-5">
+          <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>Leader</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <figure class="figure">
+                      <img src="assets/img/leader.jpg" class="figure-img img-fluid " alt="leader-1">
+                    </figure>
+                </div>
+                <div class="col-md-8 d-flex align-self-center">
+                  <blockquote class="blockquote text-center">
+                    <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+                    <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                  </blockquote>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-12 d-flex justify-content-center figure-down">
+                    <figure class="figure">
+                      <img src="assets/img/watch 1.jpeg" class="figure-img rounded-circle img-fluid" alt="leader-1">
+                    </figure>
+                    <figure class="figure">
+                        <img src="assets/img/leader.jpg" class="figure-img rounded-circle img-fluid image-utama" alt="Leader-2">
+                    </figure>
+                    <figure class="figure">
+                      <img src="assets/img/watch 1.jpeg" class="figure-img rounded-circle img-fluid" alt="leader-3">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        </section>
+        
         <div class="container-fluid bg-lightblue"> 
             <div class="container">
                 <div class="row">
@@ -171,7 +210,9 @@
                 </div>
                 <div class="row">
                     <div class="col-lg-8 col-sm-6 my-5">
-                        <div class="map" id="googleMap"></div>
+                        <div class="map embed-responsive embed-responsive-16by9" id="googleMap">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d995.568220302814!2d98.62177222916579!3d3.5242912998396987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30312573928af793%3A0x806a93100eb9e57b!2sJl.%20Penerbangan%2C%20Simpang%20Selayang%2C%20Kec.%20Medan%20Tuntungan%2C%20Kota%20Medan%2C%20Sumatera%20Utara%2020135!5e0!3m2!1sid!2sid!4v1607347333007!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 my-5">
                         <div class="d-flex-reverse">
@@ -244,6 +285,7 @@
         </div>
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    
     <script type="text/javascript">
         function yellowContainer(){
             var containerColor = document.getElementById("containerColor");
@@ -258,20 +300,5 @@
             containerColor.style.background = "linear-gradient(to right, #373b44, #4286f4)";
         }
     </script>
-    <script>
-		 // fungsi initialize untuk mempersiapkan peta
-        function initialize() {
-        var propertiPeta = {
-            center: new google.maps.LatLng(3.524418,98.622148),
-            zoom:10,
-            mapTypeId:google.maps.MapTypeId.ROADMAP
-        };
-        
-        var peta = new google.maps.Map(document.getElementById("googleMap"), propertiPeta);
-        }
-
-        // event jendela di-load  
-        google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
 </body>
 </html>

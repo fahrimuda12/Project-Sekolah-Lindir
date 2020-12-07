@@ -87,11 +87,11 @@
                     <div class="carousel-item active">
                         <div class="row">
                             <div class="col-md-4 col-sm-6 shadow-sm text-center">
-                                <h1>Goself</h1>
+                                <h1 class=" text-capitalize ">Home Smart</h1>
                             </div>
                             <div class="col-md-8 col-sm-6 px-2">
                                 <div class="embed-responsive embed-responsive-16by9">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/i2jFN_QEcS4?rel=0" allowfullscreen></iframe>
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/i2jFN_QEcS4?rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 </div>
                             </div>
                         </div>
@@ -99,21 +99,21 @@
                     <div class="carousel-item">
                         <div class="row">
                             <div class="col-md-4 col-sm-6 shadow-sm text-center border ">
-                                <h1>Goself</h1>
+                                <h1 class=" text-capitalize">Elctricity Control</h1>
                             </div>
                             <div class="col-md-8 col-sm-6 px-2">
-                                <!--<div class="embed-responsive embed-responsive-16by9">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/i2jFN_QEcS4?controls=0&loop=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
-                                </div-->
+                                <div class="embed-responsive embed-responsive-16by9">
+                                    <iframe width="560" height="315" src="https://www.youtube.com/embed/kAYcJxOoqt0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#slider" role="button" data-slide="prev">
+                <a class="carousel-control-prev control-left-bottom" href="#slider" role="button" data-slide="prev">
                     <i class="fas fa-chevron-left font-next text-primary" aria-hidden="true"></i>
                     <span class="sr-only">Previous</span>
                 </a>
-                <a class="carousel-control-next" href="#slider" role="button" data-slide="next">
+                <a class="carousel-control-next control-right-bottom" href="#slider" role="button" data-slide="next">
                     <i class="fas fa-chevron-right font-next text-primary" aria-hidden="true"></i>
                     <span class="sr-only">Next</span>
                 </a>
@@ -364,9 +364,17 @@
         function myFunction(){
             if(nav.classList.add("bg-white")){
                 nav.classList.remove("bg-white");
+                for(let i = 0; i<6; i++){
+                    itemNav[i].classList.remove("text-primary");
+                    itemNav[i].classList.add("text-white");
+                }
             }
             else{
                 nav.classList.add("bg-white");
+                for(let i = 0; i<6; i++){
+                    itemNav[i].classList.add("text-primary");
+                    itemNav[i].classList.remove("text-white");
+                }
             }
         }
         window.onscroll = function(){
