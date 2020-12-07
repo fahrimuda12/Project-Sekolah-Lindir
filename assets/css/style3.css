@@ -100,14 +100,6 @@
     top: 80px !important;
 }
 
-.control-left-bottom {
-    left: -5px !important;
-}
-
-.control-right-bottom {
-    right: -5px !important;
-}
-
 @media (min-width: 992px) {
     .control-left-bottom {
         left: -70px !important;
