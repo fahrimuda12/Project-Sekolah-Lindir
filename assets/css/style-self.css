@@ -203,6 +203,17 @@ html {
     #control-right-bottom {
         right: -100px !important;
     }
+
+    .banner-kanan img {
+        flex-shrink: 1 !important;
+        height: 200px;
+    }
+}
+
+.banner-kanan img {
+    display: flex !important;
+    flex-shrink: 1 !important;
+    padding: 0 20px !important;
 }
 
 /*jumbotorn bottom*/
