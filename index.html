@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lindir</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
-    <link href="assets/css/style3.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c7aacba508.js" crossorigin="anonymous"></script>
 </head>
@@ -86,8 +86,9 @@
                 <div class="col carousel-inner">
                     <div class="carousel-item active">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6 shadow-sm text-center">
+                            <div class="col-md-4 col-sm-6 shadow-sm text-center align-self-center">
                                 <h1 class=" text-capitalize text-primary">Home Smart</h1>
+                                <p class="lead text-center text-capitalize px-4">Rumah Pintar Anda Tenang</p>
                             </div>
                             <div class="col-md-8 col-sm-6 px-2">
                                 <div class="embed-responsive embed-responsive-16by9">
@@ -98,8 +99,9 @@
                     </div>
                     <div class="carousel-item">
                         <div class="row">
-                            <div class="col-md-4 col-sm-6 shadow-sm text-center ">
+                            <div class="col-md-4 col-sm-6 shadow-sm text-center align-self-center">
                                 <h1 class=" text-capitalize text-primary">Elctricity</h1>
+                                <p class="lead text-center text-capitalize px-4">Menerangi seluruh kota dari gelap ke yang terang</p>
                             </div>
                             <div class="col-md-8 col-sm-6 px-2">
                                 <div class="embed-responsive embed-responsive-16by9">
@@ -134,7 +136,7 @@
                     <h1>Categories Sell</h1>
                 </div>
             </div>
-            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-2 card-deck bg-whiteman pb-5">
+            <div class="row row-cols-1 row-cols-md-3 row-cols-sm-1 card-deck bg-whiteman pb-5">
                 <div class="col pt-5 ">
                     <div class="card h-100 bg-whitefor shadow mb-5">
                         <img src="assets/img/produk2.png" class="card-img-top img-card" alt="...">
@@ -142,7 +144,7 @@
                             <h5 class="card-title text-center text-uppercase bg-bluesky w-100 py-2 rounded">Protect Yourself</h5>
                                 <p class="card-text text-left">You don't worry if you go alone because Lindir can protect yourself from criminal, One time police help you from danger situation</p>
                                 <p class="card-text text-left">Lindir always protect you and always beside you. You just push one button and we will protect you.</p>
-                                <a class="btn btn-primary mt-4 w-50 rounded-pill" href="self.html">More</a>
+                                <a class="btn btn-primary mt-4 w-50 rounded-pill" href="produk/self.html">More</a>
                         </div>
                     </div>
                 </div>
@@ -153,7 +155,7 @@
                             <h5 class="card-title text-center text-uppercase bg-bluesky w-100 py-2 rounded">Protect Yourhome</h5>
                             <p class="card-text text-left">You don't worry if you leave home because Lindir can protect yourhome from criminal and send ther report for your device, One time police go to your home and caught the thief. So your home clear from steal</p>
                             <p class="card-text text-left">You don't worry if you go alone because Lindir can protect yourself from criminal, One time police help you from danger situation</p>
-                            <button class="btn btn-primary mt-4 w-50 rounded-pill" type="submit">More</button>
+                            <a class="btn btn-primary mt-4 w-50 rounded-pill" href="produk/home.html">More</a>
                         </div>
                     </div>
                 </div>
@@ -164,7 +166,7 @@
                             <h5 class="card-title text-center text-uppercase bg-bluesky w-100 py-2 rounded">Smart Home</h5>
                             <p class="card-text text-left">Lindir can make your family everyday feel happy. Lindir make you home be smarthome. AI support to be autonomus home. Make the happy stories</p>
                             <p class="card-text text-left">We have more device support by google and amazon. All device from your home can your configure from your smarthpone. Always easy to configure</p>
-                            <button class="btn btn-primary mt-4 w-50 rounded-pill" type="submit">More</button>
+                            <a class="btn btn-primary mt-4 w-50 rounded-pill" href="produk/smart.html">More</a>
                         </div>
                     </div>
                 </div>
@@ -350,57 +352,8 @@
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-        var nav = document.getElementById("scroll-nav");
-        var buttonUp = document.getElementById("buttonUp");
-        var itemNav = document.getElementsByClassName("link");
-        function firstScript(){
-            for(let i = 0; i<6; i++){
-                    itemNav[i].classList.remove("text-primary");
-                    itemNav[i].classList.add("text-white");
-                }
-        }
-        document.getElementById("toggle-button").addEventListener("click", myFunction);
-        function myFunction(){
-            if(nav.classList.add("bg-white")){
-                nav.classList.remove("bg-white");
-                for(let i = 0; i<6; i++){
-                    itemNav[i].classList.remove("text-primary");
-                    itemNav[i].classList.add("text-white");
-                }
-            }
-            else{
-                nav.classList.add("bg-white");
-                for(let i = 0; i<6; i++){
-                    itemNav[i].classList.add("text-primary");
-                    itemNav[i].classList.remove("text-white");
-                }
-            }
-        }
-        window.onscroll = function(){
-            if(window.pageYOffset >0){
-                for(let i = 0; i<6; i++){
-                    itemNav[i].classList.add("text-primary");
-                    itemNav[i].classList.remove("text-white");
-                }
-                nav.style.transition="all 1s";
-                nav.classList.add("bg-white");
-                buttonUp.classList.remove("d-none");
-            }
-            else{
-                nav.classList.remove("bg-white");
-                buttonUp.classList.add("d-none");
-                for(let i = 0; i<6; i++){
-                    itemNav[i].classList.remove("text-primary");
-                    itemNav[i].classList.add("text-white");
-                }
-                
-            }
-        }
-
-
-    </script>
-    <script src="js/darkmode.min.js"></script>
+    <script src="assets/js/scrollNavbar.js"></script>
+    <script src="assets/js/darkmode.min.js"></script>
     <script src="assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

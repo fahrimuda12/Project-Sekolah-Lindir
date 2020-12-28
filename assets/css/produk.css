@@ -97,6 +97,32 @@ html {
     border-radius: 40px;
 }
 
+.nav-item .nav-shop {
+    position: relative;
+    cursor: pointer;
+    margin-top: -5px !important;
+    font-size: 20px;
+}
+
+.nav-item .nav-shop:before {
+    content: attr(data-count);
+    position: absolute;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    top: 2px;
+    left: 22px;
+    width: 20px;
+    height: 20px;
+    background: #4d94e0;
+    border-radius: 50px;
+    opacity: 0;
+}
+
+.nav-item .nav-shop.zero::before {
+    opacity: 1;
+}
+
 @media (min-width: 992px) {
 
     .link:hover::after {
@@ -117,9 +143,29 @@ html {
     }
 }
 
+/* Select Menu */
+.select.display {
+    position: fixed;
+    top: 84px !important;
+    z-index: 9999;
+}
+
+.select {
+    width: 60%;
+    height: 580px;
+    background-color: #222;
+    position: absolute;
+    left: 78vh;
+    top: -1000px;
+    /*top: 87px;*/
+    transition: 0.5%;
+    overflow-y: scroll;
+    margin: auto;
+}
+
 /*banner */
 .banner {
-    background-image: url(../img/homesecurity.jpg);
+    background-image: url(../img/watch\ 3.jpg);
     background-size: cover;
     height: 100vh;
 }
@@ -159,9 +205,10 @@ html {
 }
 
 .banner h1 {
+    color: blue;
     position: relative;
     z-index: 1;
-    margin: 30px 0;
+    margin: 30vh 0 10vh 0;
     font-size: 75px;
     line-height: 1.5;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
@@ -193,6 +240,16 @@ html {
 
 .font-next {
     font-size: 60px;
+}
+
+@media (max-width: 992px) {
+    .swiper-container .swiper-slide p {
+        display: none;
+    }
+
+    .swiper-container .swiper-slide div a {
+        margin: 10px 0;
+    }
 }
 
 @media (min-width: 992px) {
