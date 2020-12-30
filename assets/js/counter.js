@@ -22,13 +22,42 @@ function displayCart(){
 
 let buttonMe = document.querySelectorAll('.button-select');
 
-let product = {
+let product = [
     {
+        name:'Lixy 3',
+        tag:'lixy1',
+        price:'1400000',
+        inCart: 0
+    },
+    {
+        name:'Lixy 2',
+        tag:'lixy2',
+        price:'800000',
+        inCart: 0
+    },
+    {
+        name:'Nalog',
+        tag:'nalog',
+        price:'730000',
+        inCart: 0
+    },
+    {
+        name:'Minmal',
+        tag:'minmal',
+        price:'300000',
+        inCart: 0
+    },
+    {
+        name:'Lixy 1',
+        tag:'lixy',
+        price:'250000',
+        inCart: 0
     }
-}
+
+];
 for(let i=0; i < buttonMe.length; i++){
     buttonMe[i].addEventListener('click',() => {
-        nambahNotif();
+        nambahNotif(product[i]);
     })
 }
 
@@ -41,7 +70,7 @@ function onLoadNotif()  {
     }
 }
 
-function nambahNotif(){
+function nambahNotif(products){
     let productNumber = localStorage.getItem('nambahNotif');
     productNumber = parseInt(productNumber);
     
@@ -54,6 +83,28 @@ function nambahNotif(){
         document.querySelector('.nav-shop').setAttribute('data-count', 1);
     }
     document.querySelector('.nav-shop').classList.add('zero');
+    setItems(products);
+}
+function setItems(product){
+    let cartItems = localStorage.getItem('productInCart');
+    cartItems = JSON.parse(cartItems);
+    if(cartItems != null){
+        if(cartItems[product.tag]=== undefined){
+            cartItems = {
+                ...cartItems,
+                [product.tag]: product
+            }
+        }
+        cartItems[product.tag].inCart += 1;
+    }
+    else{
+        product.inCart = 1;
+        cartItems={
+            [product.tag]:product
+        }
+    }
+
+    localStorage.setItem('productInCart',JSON.stringify(cartItems));
 }
 onLoadNotif();
 console.log('page is fully loaded');
