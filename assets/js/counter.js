@@ -157,16 +157,16 @@ function displayCart(){
         });
         
         selectContainer.innerHTML += `
-            <div class="row text-uppercase text-counter justify-content-end">
-                <div class="col-2 text-center">
-                    <h4>Total</h4>
+            <div class="row text-uppercase text-counter justify-content-end title-cart">
+                <div class="col-md-2 col-sm-4">
+                    <h4 class="title-cart">Total</h4>
                 </div>
-                <div class="col-2">
-                    <h4 >Rp. ${cartCost}</h4>
+                <div class="col-md-2 col-sm-4">
+                    <h4 class="title-cart">Rp. ${cartCost}</h4>
                 </div>
             </div>
-            <div class="row text-uppercase text-counter justify-content-end my-3">
-                <div class="col-2 mb-3">
+            <div class="row row-cols-3 row-cols-lg-6 text-uppercase text-counter justify-content-end my-3">
+                <div class="col mb-3">
                     <a class="btn btn-outline-primary px-4 rounded-pill" href="#" role="button">Buy</a>
                 </div>
             </div>
