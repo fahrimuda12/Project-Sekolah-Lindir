@@ -54,6 +54,10 @@ html {
     background-color: #eee !important;
 }
 
+[data-theme="dark"] .text-counter {
+    color: #ffff !important;
+}
+
 /* background */
 .blue-gradient {
     background: linear-gradient(to right, #00B4DB, #0083B0);
@@ -143,7 +147,8 @@ html {
     }
 }
 
-/* Select Menu */
+/* Select Menu 
+
 .select.display {
     position: fixed;
     top: 84px !important;
@@ -153,19 +158,37 @@ html {
 .select {
     width: 60%;
     height: 580px;
-    background-color: #222;
+    background-color: lightblue;
     position: absolute;
     left: 78vh;
     top: -1000px;
-    /*top: 87px;*/
+    /*top: 87px;/
     transition: 0.5%;
     overflow-y: scroll;
     margin: auto;
 }
+*/
+.title-cart {
+    margin-top: 7px;
+}
+
+@media (max-width: 575.98px) {
+    .title-cart {
+        margin-top: 7px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .img-card-counter {
+        height: 80px;
+        width: 80px;
+
+    }
+}
 
 /*banner */
 .banner {
-    background-image: url(../img/watch\ 3.jpg);
+    background-image: url(../img/lixy3.jpg);
     background-size: cover;
     height: 100vh;
 }

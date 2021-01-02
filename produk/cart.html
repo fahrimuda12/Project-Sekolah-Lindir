@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet">
+    <link href="../assets/css/produk.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7aacba508.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg sticky-top bg-white navbar-light shadow pb-3" id="scroll-nav">
+        <a class="navbar-brand ml-md-5" href="../index.html">
+            <img src="../assets/img/logo-ico.png" alt="logo" width="100" height="50" class="d-inline-block align-top" loading="lazy">
+        </a>
+        <button class="navbar-toggler" id="toggle-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> <!--pengatur toggle nya-->
+        <div class="collapse navbar-collapse mt-2 " id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <form class="form-row flex-nowrap my-2 my-lg-0">
+                    <div class="col-sm-8 col-md-9 col-lg-10">
+                        <input class="form-control search mr-sm-2 rounded-pill "  type="search" placeholder="Search" aria-label="Search" />
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn rounded-circle my-2 my-sm-0" type="submit">
+                            <i class="fas fa-search text-black-50"></i>
+                        </button>
+                    </div>
+                </form>
+                <li class="nav-item active">
+                    <a class="nav-link link  text-primary active" href="../index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link  text-primary" href="../index.html#section-feature">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link  text-primary" href="../index.html#section-categories">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link  text-primary" href="../index.html#section-pricelist">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link  text-primary" href="../index.html#section-system">System</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link  text-primary" href="#">News</a>
+                </li>
+                <li class="nav-item nav-btn">
+                    <a class="nav-link  btn  btn-primary text-white tombol px-3" href="login.html">LOGIN</a>
+                </li>
+                <li class="nav-item text-white">
+                    <a class="nav-link">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="switchDark">
+                            <label class="custom-control-label" for="switchDark">Dark mode</label>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <button class="nav-link btn text-primary nav-shop" onClick="displayCart()" id="notif"><i class="fas fa-shopping-cart"></i></button>
+                </li>
+            </ul>
+            
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col mt-3">
+                <a href="self.html" style="font-size: 20px;" class=""><span><i class="fas fa-arrow-circle-left"></i>Kembali ke belanja</span></a>
+            </div>
+        </div>
+    </div>
+        <div class="container container-fluid-sm shadow my-5">
+            <div class="row row-cols-4 text-uppercase mb-2 border">
+                <div class="col-md-5 col-sm-2">
+                    <h5 class="title-cart">produk</h5>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <h5 class="title-cart">harga</h5>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <h5 class="title-cart text-center">kuantitas</h5>
+                </div>
+                <div class="col-md-2 col-sm-4">
+                    <h5 class="title-cart">total</h5>
+                </div>
+            </div>
+            <div class="produk ">
+                    
+            </div>
+        </div>
+    <script src="../assets/js/darkmode.min.js"></script>
+    <script src="../assets/js/counter.js"></script>  
+    <script src="../assets/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
