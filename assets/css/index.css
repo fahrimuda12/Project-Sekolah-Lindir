@@ -25,6 +25,10 @@
     background: linear-gradient(to right, #292E49, #536976) !important;
 }
 
+[data-theme="dark"] .lead {
+    color: rgb(196, 99, 196) !important;
+}
+
 [data-theme="dark"] .button-top .icon-top {
     color: rgb(196, 99, 196) !important;
 }
@@ -74,6 +78,10 @@ html {
 .bg-bluesky {
     background-color: #4d94e0;
     color: #ffff !important;
+}
+
+.bg-bluesky.icon-system:hover {
+    color: #0056b3 !important;
 }
 
 .bg-bluetray {

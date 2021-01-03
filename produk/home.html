@@ -11,72 +11,71 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <script src="https://kit.fontawesome.com/c7aacba508.js" crossorigin="anonymous"></script>
 </head>
-<body class="" data-spy="scroll">
-    <nav class="navbar navbar-expand-lg sticky-top bg-white navbar-light shadow" id="scroll-nav">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="../assets/img/logo-ico.png" alt="logo" width="100" height="50" class="d-inline-block align-top" loading="lazy">
-            </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> <!--pengatur toggle nya-->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item mx-2">
-                        <form class="form-inline">
-                            <input class="form-control search mr-sm-2 rounded-pill"  type="search" placeholder="Search" aria-label="Search">
-                            <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <button class="btn my-sm-0 rounded-circle" type="submit">
-                                        <i class="fas fa-search text-black-50"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </li>
-                    <li class="nav-item mx-2 active">
-                        <a class="nav-link link  text-primary active" href="../index.html">Home </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link  text-primary" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link  text-primary" href="#">Categories</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link  text-primary" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link  text-primary" href="#">System</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link link  text-primary" href="#">News</a>
-                    </li>
-                    <li class="nav-item nav-btn">
-                        <a class="nav-link  btn  btn-primary text-white tombol px-3" href="../login.html">LOGIN</a>
-                    </li>
-                    <li class="nav-item text-white">
-                        <a class="nav-link mx-2 js-scroll-trigger">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="switchDark">
-                                <label class="custom-control-label" for="switchDark">Dark mode</label>
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-                
-            </div>
+<body data-spy="scroll">
+    <nav class="navbar navbar-expand-lg sticky-top bg-white navbar-light shadow pb-3" id="scroll-nav">
+        <a class="navbar-brand ml-md-5" href="../index.html">
+            <img src="../assets/img/logo-ico.png" alt="logo" width="100" height="50" class="d-inline-block align-top" loading="lazy">
+        </a>
+        <button class="navbar-toggler" id="toggle-button" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> <!--pengatur toggle nya-->
+        <div class="collapse navbar-collapse mt-2 " id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <form class="form-row flex-nowrap my-2 my-lg-0">
+                    <div class="col-sm-8 col-md-9 col-lg-10">
+                        <input class="form-control search mr-sm-2 rounded-pill "  type="search" placeholder="Search" aria-label="Search" />
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn rounded-circle my-2 my-sm-0" type="submit">
+                            <i class="fas fa-search text-black-50"></i>
+                        </button>
+                    </div>
+                </form>
+                <li class="nav-item active">
+                    <a class="nav-link link  text-primary active" href="../index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link  text-primary" href="../index.html#section-feature">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link  text-primary" href="../index.html#section-categories">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link  text-primary" href="../index.html#section-pricelist">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link  text-primary" href="../index.html#section-system">System</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link link  text-primary" href="#">News</a>
+                </li>
+                <li class="nav-item nav-btn">
+                    <a class="nav-link  btn  btn-primary text-white tombol px-3" href="login.html">LOGIN</a>
+                </li>
+                <li class="nav-item text-white">
+                    <a class="nav-link">
+                        <div class="custom-control custom-switch">
+                            <input type="checkbox" class="custom-control-input" id="switchDark">
+                            <label class="custom-control-label" for="switchDark">Dark mode</label>
+                        </div>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link btn text-primary nav-shop" id="notif" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+            
         </div>
     </nav>
-
+        
     <div class="container fixed-bottom mb-5 text-right">
         <a href="#" class="button-top shadow text-white"><i class="icon-top fas fa-angle-double-up"></i></a>
     </div>
 
     <div class="container mt-2">
         <div class="row d-flex justify-content-center text-center mx-auto text-uppercase ">
-                <a class=" btn btn-outline-secondary  mx-2" href="self.html"><i class="fas fa-user-secret"></i><br>self</a>
-                    <a class="btn btn-outline-secondary active mx-2" href="#"><i class="fas fa-user-secret"></i><br>Home</a>
+                <a class=" btn btn-outline-secondary  mx-2" href="#"><i class="fas fa-user-secret"></i><br>self</a>
+                    <a class="btn btn-outline-secondary active mx-2" href="home.html"><i class="fas fa-user-secret"></i><br>Home</a>
                     <a class="btn btn-outline-secondary mx-2" href="smart.html"><i class="fas fa-user-secret"></i><br>Special</a>
         </div> 
     </div>
@@ -92,10 +91,10 @@
                         <li data-target="#slider" data-slide-to="1"></li>
                     </ol>
                     <div class="carousel-item active">
-                        <img src="../assets/img/promo1.jpg" class="card-img-top img-card " height="409px" alt="...">
+                        <img src="../assets/img/promo1.jpg" class="card-img-top img-card " height="409px" alt="promo1">
                     </div>
                     <div class="carousel-item ">
-                        <img src="../assets/img/watch 3.jpg" class="card-img-top" height="409px" alt="...">
+                        <img src="../assets/img/lixy3.jpg" class="card-img-top" height="409px" alt="lixy3">
                     </div>
                 </div>
                 <a class="carousel-control-prev left-top" href="#slider" role="button" data-slide="prev">
@@ -129,70 +128,56 @@
                     <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <div class="card h-100  bg-whitefor shadow mb-5">
-                                    <a href="lixy3.html"><img src="../assets/img/watch 3.jpg" class="card-img-top img-card" height="300px" alt="..."></a>
+                                    <img src="../assets/img/autolock.jpg" class="card-img-top img-card" height="300px" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center text-uppercase w-100 py-2 rounded">Lixy 3</h5>
-                                        <p class="card-text text-left mx-n2">Features : <br>- Track System Lebih akurat<br>- Voice system on call<br>- Record perjalanan jejak  </p>
-                                        <p class="card-text text-left">Lindir always protect you and always beside you. You just push one button and we will protect you. <a href="lixy3.html">More..</a></p>
+                                        <h5 class="card-title text-center text-uppercase w-100 py-2 rounded">Locging</h5>
+                                        <p class="card-text text-left mx-n2">Features : <br>- Face system unlock<br>- Voice system on call<br>- Deteksi kehadiran  </p>
+                                        <p class="card-text text-left">Lindir always protect you and always beside you. You just push one button and we will protect you. <a href="#">More..</a></p>
                                         <div class="d-flex flex-wrap align-content-between justify-content-between mx-auto  mt-5">
                                             <a class="btn btn-outline-primary px-4 rounded-pill" href="#" role="button">Buy</a>
-                                            <a class="btn btn-danger  rounded-pill" href="#" role="button"><i class="fas fa-shopping-cart"></i>  Keranjang</a>
+                                            <button class="btn btn-danger rounded-pill button-select-home" type="button"><i class="fas fa-shopping-cart"></i>  Keranjang</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card h-100  bg-whitefor shadow mb-5">
-                                    <img src="../assets/img/watch 2.jpeg" class="card-img-top img-card" height="300px" alt="...">
+                                    <img src="../assets/img/smartplug.jpg" class="card-img-top img-card" height="300px" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center text-uppercase w-100 py-2 rounded">Lixy 1</h5>
-                                        <p class="card-text text-left mx-n2">Features : <br>- Track System Lebih akurat<br>- Voice system on call<br>- Record perjalanan jejak  </p>
+                                        <h5 class="card-title text-center text-uppercase w-100 py-2 rounded">plugy</h5>
+                                        <p class="card-text text-left mx-n2">Features : <br>- Schedule pemakaian<br>- Efesiensi pemakaian bagus<br>- Peringatan kesalahan daya  </p>
                                         <p class="card-text text-left">Lindir always protect you and always beside you. You just push one button and we will protect you. <a href="#">More..</a></p>
                                         <div class="d-flex flex-wrap align-content-between justify-content-between mx-auto  mt-5">
                                             <a class="btn btn-outline-primary px-4 rounded-pill" href="#" role="button">Buy</a>
-                                            <a class="btn btn-danger  rounded-pill" href="#" role="button"><i class="fas fa-shopping-cart"></i>  Keranjang</a>
+                                            <button class="btn btn-danger rounded-pill button-select-home" type="button"><i class="fas fa-shopping-cart"></i>  Keranjang</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card h-100  bg-whitefor shadow mb-5">
-                                    <img src="../assets/img/analog-watch.jpg" class="card-img-top img-card" height="300px" alt="...">
+                                    <img src="../assets/img/smartcamera.jpg" class="card-img-top img-card" height="300px" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center text-uppercase w-100 py-2 rounded">Lixy 1</h5>
-                                        <p class="card-text text-left mx-n2">Features : <br>- Track System Lebih akurat<br>- Voice system on call<br>- Record perjalanan jejak  </p>
+                                        <h5 class="card-title text-center text-uppercase w-100 py-2 rounded">Cammy</h5>
+                                        <p class="card-text text-left mx-n2">Features : <br>- Night vision penuh warna<br>- Interaksi Menarik<br>- Peringatan kesalahan  </p>
                                         <p class="card-text text-left">Lindir always protect you and always beside you. You just push one button and we will protect you. <a href="#">More..</a></p>
                                         <div class="d-flex flex-wrap align-content-between justify-content-between mx-auto  mt-5">
                                             <a class="btn btn-outline-primary px-4 rounded-pill" href="#" role="button">Buy</a>
-                                            <a class="btn btn-danger  rounded-pill" href="#" role="button"><i class="fas fa-shopping-cart"></i>  Keranjang</a>
+                                            <button class="btn btn-danger rounded-pill button-select-home" type="button"><i class="fas fa-shopping-cart"></i>  Keranjang</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="swiper-slide">
                                 <div class="card h-100  bg-whitefor shadow mb-5">
-                                    <img src="../assets/img/simpli.jpeg" class="card-img-top img-card" height="300px" alt="...">
+                                    <img src="../assets/img/nest.jpg" class="card-img-top img-card" height="300px"  alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title text-center text-uppercase w-100 py-2 rounded">Lixy 1</h5>
-                                        <p class="card-text text-left mx-n2">Features : <br>- Track System Lebih akurat<br>- Voice system on call<br>- Record perjalanan jejak  </p>
+                                        <h5 class="card-title text-center text-uppercase w-100 py-2 rounded">Pilin</h5>
+                                        <p class="card-text text-left mx-n2">Features : <br>- Satu benda pengatur segala hal<br>- Two voice system<br>- Record perjalanan jejak  </p>
                                         <p class="card-text text-left">Lindir always protect you and always beside you. You just push one button and we will protect you. <a href="#">More..</a></p>
                                         <div class="d-flex flex-wrap align-content-between justify-content-between mx-auto  mt-5">
                                             <a class="btn btn-outline-primary px-4 rounded-pill" href="#" role="button">Buy</a>
-                                            <a class="btn btn-danger  rounded-pill" href="#" role="button"><i class="fas fa-shopping-cart"></i>  Keranjang</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card h-100  bg-whitefor shadow mb-5">
-                                    <img src="../assets/img/watch 1.jpeg" class="card-img-top img-card" height="300px" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title text-center text-uppercase w-100 py-2 rounded">Lixy 1</h5>
-                                        <p class="card-text text-left mx-n2">Features : <br>- Track System Lebih akurat<br>- Voice system on call<br>- Record perjalanan jejak  </p>
-                                        <p class="card-text text-left">Lindir always protect you and always beside you. You just push one button and we will protect you. <a href="#">More..</a></p>
-                                        <div class="d-flex flex-wrap align-content-between justify-content-between mx-auto  mt-5">
-                                            <a class="btn btn-outline-primary px-4 rounded-pill" href="#" role="button">Buy</a>
-                                            <a class="btn btn-danger  rounded-pill" href="#" role="button"><i class="fas fa-shopping-cart"></i>  Keranjang</a>
+                                            <button class="btn btn-danger rounded-pill button-select-home" type="button"><i class="fas fa-shopping-cart"></i>  Keranjang</button>
                                         </div>
                                     </div>
                                 </div>
@@ -345,10 +330,12 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../assets/js/darkmode.min.js"></script>
+    <script src="../assets/js/counter.js"></script>  
     <script src="../assets/js/jquery-3.5.1.slim.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/swiperMe.js"></script>
+    
     
 </body>
 </html>

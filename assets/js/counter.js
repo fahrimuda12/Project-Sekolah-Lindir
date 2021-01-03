@@ -22,6 +22,8 @@ function displayCart(){
 
 let buttonMe = document.querySelectorAll('.button-select');
 
+let buttonHome = document.querySelectorAll('.button-select-home');
+
 let product = [
     {
         name:'Lixy 3',
@@ -55,10 +57,45 @@ let product = [
     }
 
 ];
+
+let productHome = [
+    {
+        name:'locging',
+        tag:'autolock',
+        price:800000,
+        inCart: 0
+    },
+    {
+        name:'Plugy',
+        tag:'smartplug',
+        price:120000,
+        inCart: 0
+    },
+    {
+        name:'Cammy',
+        tag:'smartcamera',
+        price:420000,
+        inCart: 0
+    },
+    {
+        name:'Pilin',
+        tag:'nest',
+        price:930000,
+        inCart: 0
+    }
+];
+
 for(let i=0; i < buttonMe.length; i++){
     buttonMe[i].addEventListener('click',() => {
         nambahNotif(product[i]);
         totalCost(product[i]);
+    })
+}
+
+for(let i=0; i < buttonHome.length; i++){
+    buttonHome[i].addEventListener('click',() => {
+        nambahNotif(productHome[i]);
+        totalCost(productHome[i]);
     })
 }
 
