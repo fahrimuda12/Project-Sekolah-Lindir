@@ -422,6 +422,14 @@ html {
 }
 
 /*jumbotorn bottom*/
+.jumbotron-bottom {
+    margin-top: 20px;
+    margin-bottom: 0px !important;
+    background-image: url(../img/SmartTechnology.jpg);
+    height: 55vh !important;
+    background-attachment: fixed;
+}
+
 #jumbotron-bottom {
     box-shadow: 1em 0 .4em black;
     background-image: url(../img/SmartTechnology.jpg) !important;
